@@ -27,6 +27,7 @@ function collapseRagdoll(ragdoll: Types.Ragdoll)
 	end
 end
 
+--[[
 RagdollSystem.Remotes.ActivateRagdoll.OnServerEvent:Connect(function(player: Player)
 	local ragdoll = RagdollSystem:getPlayerRagdoll(player)
 	if ragdoll then
@@ -47,6 +48,7 @@ RagdollSystem.Remotes.CollapseRagdoll.OnServerEvent:Connect(function(player: Pla
 		collapseRagdoll(ragdoll)
 	end
 end)
+]]
 
 RagdollSystem.Signals.ActivateRagdoll:Connect(function(ragdollModel)
 	local ragdoll = RagdollSystem:getRagdoll(ragdollModel)
